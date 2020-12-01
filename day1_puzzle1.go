@@ -1,9 +1,32 @@
 package main
 
-import "fmt"
+import (
+	"bufio"
+	"fmt"
+	"log"
+	"os"
+	"strconv"
+)
 
 func main() {
-	entries := []int{1721, 979, 366, 299, 675, 1456}
+	file, err := os.Open("day1_puzzle1.txt")
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	scanner := bufio.NewScanner(file)
+	scanner.Split(bufio.ScanLines)
+
+	var entries []int
+
+	for scanner.Scan() {
+		strV := scanner.Text()
+		intV, err := strconv.Atoi(strV)
+
+		if err == nil {
+			entries = append(entries, intV)
+		}
+	}
 
 	for k, v := range entries {
 		for _k, _v := range entries {
