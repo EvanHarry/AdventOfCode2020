@@ -1,4 +1,4 @@
-package main
+package puzzles
 
 import (
 	"bufio"
@@ -8,8 +8,9 @@ import (
 	"strconv"
 )
 
-func main() {
-	file, err := os.Open("day1_puzzle1.txt")
+// DayOnePuzzleOne - https://adventofcode.com/2020/day/1
+func DayOnePuzzleOne() {
+	file, err := os.Open("data/day1.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -39,7 +40,7 @@ func main() {
 			if sum == 2020 {
 				product := v * _v
 
-				fmt.Printf("%v and %v have a sum of %v and a product of %v.", v, _v, sum, product)
+				fmt.Printf("%v and %v have a sum of %v and a product of %v\n", v, _v, sum, product)
 
 				return
 			}
