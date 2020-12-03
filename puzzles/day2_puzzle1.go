@@ -17,8 +17,8 @@ type day2Puzzle1Entry struct {
 	valid    bool
 }
 
-// DayTwoPuzzleOne - https://adventofcode.com/2020/day/2
-func DayTwoPuzzleOne() {
+// Day2Puzzle1 - https://adventofcode.com/2020/day/2
+func Day2Puzzle1() {
 	file, err := os.Open("data/day2.txt")
 	if err != nil {
 		log.Fatal(err)

@@ -8,8 +8,8 @@ import (
 	"strconv"
 )
 
-// DayOnePuzzleTwo - https://adventofcode.com/2020/day/1
-func DayOnePuzzleTwo() {
+// Day1Puzzle2 - https://adventofcode.com/2020/day/1
+func Day1Puzzle2() {
 	file, err := os.Open("data/day1.txt")
 	if err != nil {
 		log.Fatal(err)

@@ -8,20 +8,30 @@ import (
 
 func main() {
 	fmt.Println("Running day1_puzzle1...")
-	puzzles.DayOnePuzzleOne()
+	puzzles.Day1Puzzle1()
 
 	fmt.Println()
 
 	fmt.Println("Running day1_puzzle2...")
-	puzzles.DayOnePuzzleTwo()
+	puzzles.Day1Puzzle2()
 
 	fmt.Println()
 
 	fmt.Println("Running day2_puzzle1...")
-	puzzles.DayTwoPuzzleOne()
+	puzzles.Day2Puzzle1()
 
 	fmt.Println()
 
 	fmt.Println("Running day2_puzzle2...")
-	puzzles.DayTwoPuzzleTwo()
+	puzzles.Day2Puzzle2()
+
+	fmt.Println()
+
+	fmt.Println("Running day3_puzzle1...")
+	puzzles.Day3Puzzle1()
+
+	fmt.Println()
+
+	fmt.Println("Running day3_puzzle2...")
+	puzzles.Day3Puzzle2()
 }
